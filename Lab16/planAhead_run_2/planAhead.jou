@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Tue Dec 13 22:17:21 2016
+# Process ID: 7500
+# Log file: D:/FPGA/IEEE/Lab16/planAhead_run_2/planAhead.log
+# Journal file: D:/FPGA/IEEE/Lab16/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/FPGA/IEEE/Lab16/pa.fromHdl.tcl

@@ -1,0 +1,38 @@
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab25/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab25/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab25/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab25/digital_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digital_display.ucf -p xc3s100e-cp132-5 digital_display.ngc digital_display.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o digital_display_map.ncd digital_display.ngd digital_display.pcf 
+par -w -intstyle ise -ol high -t 1 digital_display_map.ncd digital_display.ncd digital_display.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml digital_display.twx digital_display.ncd -o digital_display.twr digital_display.pcf -ucf digital_display.ucf 
+bitgen -intstyle ise -f digital_display.ut digital_display.ncd 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab25/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab25/digital_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digital_display.ucf -p xc3s100e-cp132-5 digital_display.ngc digital_display.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o digital_display_map.ncd digital_display.ngd digital_display.pcf 
+par -w -intstyle ise -ol high -t 1 digital_display_map.ncd digital_display.ncd digital_display.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml digital_display.twx digital_display.ncd -o digital_display.twr digital_display.pcf -ucf digital_display.ucf 
+bitgen -intstyle ise -f digital_display.ut digital_display.ncd 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab25/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab25/digital_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digital_display.ucf -p xc3s100e-cp132-5 digital_display.ngc digital_display.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o digital_display_map.ncd digital_display.ngd digital_display.pcf 
+par -w -intstyle ise -ol high -t 1 digital_display_map.ncd digital_display.ncd digital_display.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml digital_display.twx digital_display.ncd -o digital_display.twr digital_display.pcf -ucf digital_display.ucf 
+bitgen -intstyle ise -f digital_display.ut digital_display.ncd 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab25/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab25/digital_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digital_display.ucf -p xc3s100e-cp132-5 digital_display.ngc digital_display.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o digital_display_map.ncd digital_display.ngd digital_display.pcf 
+par -w -intstyle ise -ol high -t 1 digital_display_map.ncd digital_display.ncd digital_display.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml digital_display.twx digital_display.ncd -o digital_display.twr digital_display.pcf -ucf digital_display.ucf 
+bitgen -intstyle ise -f digital_display.ut digital_display.ncd 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab26/digital_display.xst" -ofn "D:/FPGA/IEEE/Lab26/digital_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digital_display.ucf -p xc3s100e-cp132-5 digital_display.ngc digital_display.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o digital_display_map.ncd digital_display.ngd digital_display.pcf 
+par -w -intstyle ise -ol high -t 1 digital_display_map.ncd digital_display.ncd digital_display.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml digital_display.twx digital_display.ncd -o digital_display.twr digital_display.pcf -ucf digital_display.ucf 
+bitgen -intstyle ise -f digital_display.ut digital_display.ncd 

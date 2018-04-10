@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Tue Dec 13 21:15:20 2016
+# Process ID: 11180
+# Log file: D:/FPGA/IEEE/Lab14/planAhead_run_1/planAhead.log
+# Journal file: D:/FPGA/IEEE/Lab14/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/FPGA/IEEE/Lab14/pa.fromHdl.tcl
+set_property package_pin "" [get_ports [list  CB]]
+set_property package_pin "" [get_ports [list  CE]]
+set_property package_pin "" [get_ports [list  {AN[1]}]]
+startgroup
+set_property package_pin K14 [get_ports {AN[0]}]
+endgroup
+startgroup
+set_property package_pin K13 [get_ports {AN[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {AN[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {AN[1]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {AN[2]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {AN[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  CB]]
+startgroup
+set_property package_pin L14 [get_ports CA]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports CB]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports CC]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports CD]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports CE]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports CF]
+endgroup
+startgroup
+set_property package_pin M12 [get_ports CG]
+endgroup
+startgroup
+set_property package_pin N13 [get_ports DP]
+endgroup
+save_design

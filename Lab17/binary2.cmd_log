@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binary2.ucf -p xc3s100e-cp132-5 binary2.ngc binary2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o binary2_map.ncd binary2.ngd binary2.pcf 
+par -w -intstyle ise -ol high -t 1 binary2_map.ncd binary2.ncd binary2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml binary2.twx binary2.ncd -o binary2.twr binary2.pcf -ucf binary2.ucf 
+bitgen -intstyle ise -f binary2.ut binary2.ncd 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binary2.ucf -p xc3s100e-cp132-5 binary2.ngc binary2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o binary2_map.ncd binary2.ngd binary2.pcf 
+par -w -intstyle ise -ol high -t 1 binary2_map.ncd binary2.ncd binary2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml binary2.twx binary2.ncd -o binary2.twr binary2.pcf -ucf binary2.ucf 
+bitgen -intstyle ise -f binary2.ut binary2.ncd 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab17/binary2.xst" -ofn "D:/FPGA/IEEE/Lab17/binary2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binary2.ucf -p xc3s100e-cp132-5 binary2.ngc binary2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o binary2_map.ncd binary2.ngd binary2.pcf 
+par -w -intstyle ise -ol high -t 1 binary2_map.ncd binary2.ncd binary2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml binary2.twx binary2.ncd -o binary2.twr binary2.pcf -ucf binary2.ucf 
+bitgen -intstyle ise -f binary2.ut binary2.ncd 

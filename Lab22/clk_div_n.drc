@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Fri Dec 16 12:13:47 2016
+
+drc -z CLK_div_N.ncd CLK_div_N.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,103 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n 3
+-fastpaths -xml binary2.twx binary2.ncd -o binary2.twr binary2.pcf -ucf
+binary2.ucf
+
+Design file:              binary2.ncd
+Physical constraint file: binary2.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW<0>          |AN<0>          |    6.712|
+SW<0>          |AN<1>          |    6.497|
+SW<0>          |AN<2>          |    6.712|
+SW<0>          |DISP1<0>       |    6.804|
+SW<0>          |DISP1<1>       |    6.768|
+SW<0>          |DISP1<2>       |    6.557|
+SW<0>          |DISP1<3>       |    7.059|
+SW<0>          |DISP1<4>       |    6.306|
+SW<0>          |DISP1<5>       |    6.246|
+SW<0>          |DISP1<6>       |    6.305|
+SW<1>          |AN<0>          |    7.266|
+SW<1>          |AN<1>          |    7.051|
+SW<1>          |AN<2>          |    7.266|
+SW<1>          |DISP1<0>       |    7.101|
+SW<1>          |DISP1<1>       |    7.611|
+SW<1>          |DISP1<2>       |    7.395|
+SW<1>          |DISP1<3>       |    7.390|
+SW<1>          |DISP1<4>       |    6.848|
+SW<1>          |DISP1<5>       |    6.744|
+SW<1>          |DISP1<6>       |    6.818|
+SW<1>          |DISP1<7>       |    6.840|
+SW<2>          |AN<0>          |    7.063|
+SW<2>          |AN<1>          |    6.848|
+SW<2>          |AN<2>          |    7.063|
+SW<2>          |DISP1<0>       |    6.966|
+SW<2>          |DISP1<1>       |    7.122|
+SW<2>          |DISP1<2>       |    6.940|
+SW<2>          |DISP1<3>       |    7.199|
+SW<2>          |DISP1<4>       |    7.051|
+SW<2>          |DISP1<5>       |    6.575|
+SW<2>          |DISP1<6>       |    6.999|
+SW<2>          |DISP1<7>       |    7.310|
+SW<3>          |AN<0>          |    8.446|
+SW<3>          |AN<1>          |    8.231|
+SW<3>          |AN<2>          |    8.446|
+SW<3>          |DISP1<0>       |    7.300|
+SW<3>          |DISP1<1>       |    8.425|
+SW<3>          |DISP1<2>       |    8.265|
+SW<3>          |DISP1<3>       |    7.584|
+SW<3>          |DISP1<4>       |    7.922|
+SW<3>          |DISP1<5>       |    7.929|
+SW<3>          |DISP1<6>       |    7.926|
+SW<3>          |DISP1<7>       |    8.148|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 14 19:05:55 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 127 MB
+
+
+

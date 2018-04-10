@@ -1,0 +1,5 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK" LOC = B8;
+NET "CLK_div_N" LOC = M5;

@@ -1,0 +1,439 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: stopwatch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "stopwatch.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "stopwatch"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : stopwatch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "stopwatch.v" in library work
+Module <stopwatch> compiled
+No errors in compilation
+Analysis of file <"stopwatch.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <stopwatch> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <stopwatch>.
+Module <stopwatch> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <stopwatch>.
+    Related source file is "stopwatch.v".
+WARNING:Xst:1781 - Signal <list> is used but never assigned. Tied to default value.
+    Found 10x8-bit ROM for signal <$varindex0000> created at line 64.
+    Found 10x8-bit ROM for signal <$varindex0001> created at line 68.
+    Found 10x8-bit ROM for signal <$varindex0002> created at line 72.
+    Found 10x8-bit ROM for signal <$varindex0003> created at line 76.
+    Found 4-bit register for signal <AN2>.
+    Found 1-of-4 decoder for signal <AN2$mux0000> created at line 61.
+    Found 32-bit up counter for signal <cnt1>.
+    Found 32-bit up counter for signal <cnt2>.
+    Found 2-bit up counter for signal <count>.
+    Found 8-bit register for signal <DISP2>.
+    Found 8-bit 4-to-1 multiplexer for signal <DISP2$mux0000> created at line 61.
+    Found 1-bit register for signal <flag>.
+    Found 4-bit up counter for signal <four>.
+    Found 4-bit up counter for signal <one>.
+    Found 4-bit up counter for signal <three>.
+    Found 8-bit up counter for signal <total_second>.
+    Found 4-bit up counter for signal <two>.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   8 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <stopwatch> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 10x8-bit ROM                                          : 4
+# Counters                                             : 8
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 4
+ 8-bit up counter                                      : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 10x8-bit ROM                                          : 4
+# Counters                                             : 8
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 4
+ 8-bit up counter                                      : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <stopwatch> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block stopwatch, actual ratio is 9.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 103
+ Flip-Flops                                            : 103
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : stopwatch.ngr
+Top Level Output File Name         : stopwatch
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 356
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 69
+#      LUT2                        : 12
+#      LUT2_D                      : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 26
+#      LUT3_D                      : 2
+#      LUT4                        : 64
+#      LUT4_D                      : 2
+#      LUT4_L                      : 2
+#      MUXCY                       : 85
+#      MUXF5                       : 8
+#      VCC                         : 1
+#      XORCY                       : 72
+# FlipFlops/Latches                : 103
+#      FDE                         : 12
+#      FDR                         : 33
+#      FDRE                        : 58
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 21
+#      IBUF                        : 1
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       95  out of    960     9%  
+ Number of Slice Flip Flops:            103  out of   1920     5%  
+ Number of 4 input LUTs:                189  out of   1920     9%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of     83    27%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+BTN2                               | BUFGP                  | 1     |
+CLK                                | BUFGP                  | 102   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.112ns (Maximum Frequency: 163.602MHz)
+   Minimum input arrival time before clock: 3.847ns
+   Maximum output required time after clock: 4.134ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BTN2'
+  Clock period: 1.847ns (frequency: 541.404MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.847ns (Levels of Logic = 0)
+  Source:            flag (FF)
+  Destination:       flag (FF)
+  Source Clock:      BTN2 rising
+  Destination Clock: BTN2 rising
+
+  Data Path: flag to flag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.514   0.538  flag (flag)
+     FDR:R                     0.795          flag
+    ----------------------------------------
+    Total                      1.847ns (1.309ns logic, 0.538ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.112ns (frequency: 163.602MHz)
+  Total number of paths / destination ports: 5967 / 230
+-------------------------------------------------------------------------
+Delay:               6.112ns (Levels of Logic = 10)
+  Source:            cnt2_8 (FF)
+  Destination:       cnt2_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: cnt2_8 to cnt2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.532  cnt2_8 (cnt2_8)
+     LUT4:I0->O            1   0.612   0.000  cnt2_cmp_eq0000_wg_lut<0> (cnt2_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  cnt2_cmp_eq0000_wg_cy<0> (cnt2_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  cnt2_cmp_eq0000_wg_cy<1> (cnt2_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  cnt2_cmp_eq0000_wg_cy<2> (cnt2_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  cnt2_cmp_eq0000_wg_cy<3> (cnt2_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  cnt2_cmp_eq0000_wg_cy<4> (cnt2_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  cnt2_cmp_eq0000_wg_cy<5> (cnt2_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  cnt2_cmp_eq0000_wg_cy<6> (cnt2_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          11   0.399   0.862  cnt2_cmp_eq0000_wg_cy<7> (cnt2_cmp_eq0000)
+     LUT2:I1->O           32   0.612   1.073  cnt2_and00001 (cnt2_and0000)
+     FDRE:R                    0.795          cnt2_0
+    ----------------------------------------
+    Total                      6.112ns (3.646ns logic, 2.467ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.847ns (Levels of Logic = 2)
+  Source:            BTN3 (PAD)
+  Destination:       total_second_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BTN3 to total_second_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.690  BTN3_IBUF (BTN3_IBUF)
+     LUT4:I0->O            8   0.612   0.643  total_second_or000027 (total_second_or0000)
+     FDRE:R                    0.795          total_second_0
+    ----------------------------------------
+    Total                      3.847ns (2.513ns logic, 1.334ns route)
+                                       (65.3% logic, 34.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            total_second_7 (FF)
+  Destination:       LD<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: total_second_7 to LD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.514   0.451  total_second_7 (total_second_7)
+     OBUF:I->O                 3.169          LD_7_OBUF (LD<7>)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.31 secs
+ 
+--> 
+
+Total memory usage is 248396 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

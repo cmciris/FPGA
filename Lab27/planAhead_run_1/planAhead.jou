@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sat Dec 17 10:47:14 2016
+# Process ID: 868
+# Log file: D:/FPGA/IEEE/Lab27/planAhead_run_1/planAhead.log
+# Journal file: D:/FPGA/IEEE/Lab27/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/FPGA/IEEE/Lab27/pa.fromHdl.tcl
+startgroup
+set_property package_pin K13 [get_ports {AN1[0]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {AN1[0]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {AN1[1]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {AN1[2]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {AN1[3]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {AN1[3]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {DISP1[0]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {DISP1[1]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {DISP1[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {DISP1[3]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {DISP1[4]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {DISP1[5]}]
+endgroup
+set_property package_pin "" [get_ports [list  {DISP1[7]}]]
+startgroup
+set_property package_pin M12 [get_ports {DISP1[6]}]
+endgroup
+startgroup
+set_property package_pin N13 [get_ports {DISP1[7]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {LD[0]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {LD[1]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {LD[2]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {LD[3]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {LD[4]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {LD[5]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {LD[6]}]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports {LD[7]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports CLK]
+endgroup
+save_design

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab15/zero.xst" -ofn "D:/FPGA/IEEE/Lab15/zero.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab15/zero.xst" -ofn "D:/FPGA/IEEE/Lab15/zero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc zero.ucf -p xc3s100e-cp132-5 zero.ngc zero.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o zero_map.ncd zero.ngd zero.pcf 
+par -w -intstyle ise -ol high -t 1 zero_map.ncd zero.ncd zero.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml zero.twx zero.ncd -o zero.twr zero.pcf -ucf zero.ucf 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab15/zero.xst" -ofn "D:/FPGA/IEEE/Lab15/zero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc zero.ucf -p xc3s100e-cp132-5 zero.ngc zero.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o zero_map.ncd zero.ngd zero.pcf 
+par -w -intstyle ise -ol high -t 1 zero_map.ncd zero.ncd zero.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml zero.twx zero.ncd -o zero.twr zero.pcf -ucf zero.ucf 
+bitgen -intstyle ise -f zero.ut zero.ncd 

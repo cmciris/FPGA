@@ -1,0 +1,18 @@
+
+
+NET "CLK" LOC = B8;
+
+
+NET "LD[0]" LOC = M5;
+NET "LD[1]" LOC = M11;
+NET "LD[2]" LOC = P7;
+NET "LD[3]" LOC = P6;
+NET "LD[4]" LOC = N5;
+NET "LD[5]" LOC = N4;
+NET "LD[6]" LOC = P4;
+NET "LD[7]" LOC = G1;
+
+# PlanAhead Generated physical constraints 
+
+NET "BTN0" LOC = A7;
+NET "BTN1" LOC = M4;

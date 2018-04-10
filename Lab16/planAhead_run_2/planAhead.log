@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Tue Dec 13 22:17:21 2016
+# Process ID: 7500
+# Log file: D:/FPGA/IEEE/Lab16/planAhead_run_2/planAhead.log
+# Journal file: D:/FPGA/IEEE/Lab16/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/ISE/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/ISE/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/ISE/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/FPGA/IEEE/Lab16/pa.fromHdl.tcl
+# create_project -name Lab16 -dir "D:/FPGA/IEEE/Lab16/planAhead_run_2" -part xc3s100ecp132-5
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     D:/FPGA/IEEE/Lab16/planAhead_run_2/Lab16.ppr
+     D:/FPGA/IEEE/Lab16/planAhead_run_2/Lab16.data
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

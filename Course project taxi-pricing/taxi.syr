@@ -1,0 +1,730 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: taxi.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "taxi.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "taxi"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : taxi
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "taxi.v" in library work
+Module <taxi> compiled
+No errors in compilation
+Analysis of file <"taxi.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <taxi> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <taxi>.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1607 - Contents of array <glow> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <taxi> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <taxi>.
+    Related source file is "taxi.v".
+WARNING:Xst:1781 - Signal <list> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <glow> is used but never assigned. Tied to default value.
+    Found 10x8-bit ROM for signal <$varindex0000> created at line 487.
+    Found 10x8-bit ROM for signal <$varindex0001> created at line 531.
+    Found 16x32-bit ROM for signal <$varindex0002> created at line 457.
+    Found 16x32-bit ROM for signal <$varindex0003> created at line 457.
+    Found 16x32-bit ROM for signal <$varindex0004> created at line 457.
+    Found 16x32-bit ROM for signal <$varindex0005> created at line 514.
+    Found 16x32-bit ROM for signal <$varindex0006> created at line 514.
+    Found 16x32-bit ROM for signal <$varindex0007> created at line 514.
+    Found 16x32-bit ROM for signal <$varindex0008> created at line 365.
+    Found 16x32-bit ROM for signal <$varindex0009> created at line 365.
+    Found 16x32-bit ROM for signal <$varindex0010> created at line 365.
+    Found 16x32-bit ROM for signal <$varindex0011> created at line 422.
+    Found 16x32-bit ROM for signal <$varindex0012> created at line 422.
+    Found 16x32-bit ROM for signal <$varindex0013> created at line 422.
+    Found 16x32-bit ROM for signal <$varindex0014> created at line 273.
+    Found 16x32-bit ROM for signal <$varindex0015> created at line 273.
+    Found 16x32-bit ROM for signal <$varindex0016> created at line 273.
+    Found 16x32-bit ROM for signal <$varindex0017> created at line 330.
+    Found 16x32-bit ROM for signal <$varindex0018> created at line 330.
+    Found 16x32-bit ROM for signal <$varindex0019> created at line 330.
+    Found 16x32-bit ROM for signal <$varindex0020> created at line 181.
+    Found 16x32-bit ROM for signal <$varindex0021> created at line 181.
+    Found 16x32-bit ROM for signal <$varindex0022> created at line 181.
+    Found 16x32-bit ROM for signal <$varindex0023> created at line 238.
+    Found 16x32-bit ROM for signal <$varindex0024> created at line 238.
+    Found 16x32-bit ROM for signal <$varindex0025> created at line 238.
+    Found 10x8-bit ROM for signal <$varindex0026> created at line 463.
+    Found 10x8-bit ROM for signal <$varindex0027> created at line 476.
+    Found 10x8-bit ROM for signal <$varindex0028> created at line 497.
+    Found 10x8-bit ROM for signal <$varindex0029> created at line 519.
+    Found 10x8-bit ROM for signal <$varindex0030> created at line 526.
+    Found 10x8-bit ROM for signal <$varindex0031> created at line 535.
+    Found 4-bit register for signal <AN2>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0002>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0004>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0005>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0007>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0009>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0010>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0012>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0013>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0014>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0015>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0016>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0017>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0019>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0020>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0021>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0022>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0023>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0024>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0026>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0027>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0028>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0029>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0030>.
+    Found 32-bit comparator equal for signal <AN2$cmp_eq0031>.
+    Found 4-bit 4-to-1 multiplexer for signal <AN2$mux0000>.
+    Found 32-bit up counter for signal <cnt1>.
+    Found 33-bit comparator greatequal for signal <cnt1$cmp_ge0000> created at line 177.
+    Found 32-bit up counter for signal <cnt2>.
+    Found 32-bit up counter for signal <cnt3>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count$addsub0000>.
+    Found 32-bit comparator greatequal for signal <count$cmp_ge0001> created at line 508.
+    Found 8-bit register for signal <DISP2>.
+    Found 8-bit 4-to-1 multiplexer for signal <DISP2$mux0000>.
+    Found 1-bit register for signal <flag>.
+    Found 6-bit register for signal <four>.
+    Found 6-bit addsub for signal <four$mux0000>.
+    Found 32-bit up counter for signal <km>.
+    Found 10-bit up counter for signal <m>.
+    Found 8-bit up counter for signal <min>.
+    Found 6-bit up counter for signal <one>.
+    Found 6-bit adder carry out for signal <one$addsub0000> created at line 569.
+    Found 6-bit adder carry out for signal <one$addsub0001> created at line 567.
+    Found 6-bit adder carry out for signal <one$addsub0002> created at line 589.
+    Found 6-bit adder carry out for signal <one$addsub0003> created at line 611.
+    Found 6-bit adder carry out for signal <one$addsub0004> created at line 609.
+    Found 6-bit adder carry out for signal <one$addsub0005> created at line 663.
+    Found 7-bit comparator greater for signal <one$cmp_gt0000> created at line 569.
+    Found 7-bit comparator greater for signal <one$cmp_gt0001> created at line 567.
+    Found 7-bit comparator greater for signal <one$cmp_gt0002> created at line 589.
+    Found 7-bit comparator greater for signal <one$cmp_gt0003> created at line 611.
+    Found 7-bit comparator greater for signal <one$cmp_gt0004> created at line 609.
+    Found 32-bit comparator greater for signal <one$cmp_gt0005> created at line 566.
+    Found 7-bit comparator greater for signal <one$cmp_gt0006> created at line 663.
+    Found 32-bit comparator lessequal for signal <one$cmp_le0000> created at line 559.
+    Found 7-bit comparator lessequal for signal <one$cmp_le0001> created at line 567.
+    Found 32-bit comparator lessequal for signal <one$cmp_le0002> created at line 566.
+    Found 7-bit comparator lessequal for signal <one$cmp_le0003> created at line 609.
+    Found 7-bit comparator lessequal for signal <one$cmp_le0004> created at line 569.
+    Found 7-bit comparator lessequal for signal <one$cmp_le0005> created at line 589.
+    Found 7-bit comparator lessequal for signal <one$cmp_le0006> created at line 611.
+    Found 7-bit comparator lessequal for signal <one$cmp_le0007> created at line 663.
+    Found 6-bit register for signal <t_four>.
+    Found 6-bit addsub for signal <t_four$addsub0000>.
+    Found 6-bit adder carry out for signal <t_four$addsub0001> created at line 101.
+    Found 6-bit register for signal <t_one>.
+    Found 6-bit adder for signal <t_one$add0002>.
+    Found 7-bit adder for signal <t_one$addsub0000> created at line 106.
+    Found 6-bit adder carry out for signal <t_one$addsub0001> created at line 107.
+    Found 7-bit comparator greater for signal <t_one$cmp_gt0000> created at line 106.
+    Found 6-bit addsub for signal <t_one$share0000>.
+    Found 6-bit register for signal <t_thousand>.
+    Found 7-bit adder for signal <t_thousand$add0000> created at line 106.
+    Found 7-bit adder for signal <t_thousand$add0001> created at line 104.
+    Found 7-bit adder for signal <t_thousand$add0002> created at line 102.
+    Found 6-bit adder for signal <t_thousand$addsub0001> created at line 164.
+    Found 6-bit adder carry out for signal <t_thousand$addsub0002> created at line 108.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0000> created at line 104.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0001> created at line 102.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0002> created at line 100.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0003> created at line 122.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0004> created at line 140.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0005> created at line 106.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0006> created at line 108.
+    Found 7-bit comparator greater for signal <t_thousand$cmp_gt0007> created at line 154.
+    Found 6-bit comparator greater for signal <t_thousand$cmp_gt0008> created at line 164.
+    Found 7-bit comparator lessequal for signal <t_thousand$cmp_le0000> created at line 106.
+    Found 7-bit comparator lessequal for signal <t_thousand$cmp_le0001> created at line 104.
+    Found 7-bit comparator lessequal for signal <t_thousand$cmp_le0002> created at line 102.
+    Found 7-bit comparator lessequal for signal <t_thousand$cmp_le0003> created at line 122.
+    Found 7-bit comparator lessequal for signal <t_thousand$cmp_le0004> created at line 100.
+    Found 6-bit adder for signal <t_thousand$share0000>.
+    Found 6-bit subtractor for signal <t_thousand$share0001>.
+    Found 6-bit register for signal <t_three>.
+    Found 7-bit adder for signal <t_three$addsub0000> created at line 102.
+    Found 6-bit subtractor for signal <t_three$addsub0001> created at line 103.
+    Found 6-bit adder for signal <t_three$addsub0002> created at line 118.
+    Found 6-bit addsub for signal <t_three$addsub0003>.
+    Found 6-bit adder carry out for signal <t_three$addsub0004> created at line 103.
+    Found 7-bit comparator greater for signal <t_three$cmp_gt0000> created at line 102.
+    Found 6-bit register for signal <t_two>.
+    Found 6-bit adder for signal <t_two$add0002>.
+    Found 7-bit adder for signal <t_two$addsub0000> created at line 104.
+    Found 6-bit adder carry out for signal <t_two$addsub0001> created at line 105.
+    Found 7-bit comparator greater for signal <t_two$cmp_gt0000> created at line 104.
+    Found 6-bit addsub for signal <t_two$share0000>.
+    Found 4-bit up counter for signal <thousand>.
+    Found 4-bit adder for signal <thousand$mux0000>.
+    Found 6-bit up counter for signal <three>.
+    Found 6-bit addsub for signal <three$mux0000>.
+    Found 6-bit up counter for signal <two>.
+    Found 32-bit comparator greater for signal <two$cmp_gt0000> created at line 559.
+    Summary:
+	inferred  32 ROM(s).
+	inferred  10 Counter(s).
+	inferred  81 D-type flip-flop(s).
+	inferred  35 Adder/Subtractor(s).
+	inferred  59 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <taxi> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 32
+ 10x8-bit ROM                                          : 8
+ 16x32-bit ROM                                         : 24
+# Adders/Subtractors                                   : 35
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 3
+ 6-bit adder                                           : 5
+ 6-bit adder carry out                                 : 11
+ 6-bit addsub                                          : 6
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 6
+# Counters                                             : 10
+ 10-bit up counter                                     : 1
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 3
+ 8-bit up counter                                      : 1
+# Registers                                            : 10
+ 1-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 6-bit register                                        : 6
+ 8-bit register                                        : 1
+# Comparators                                          : 59
+ 32-bit comparator equal                               : 24
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 2
+ 33-bit comparator greatequal                          : 1
+ 6-bit comparator greater                              : 1
+ 7-bit comparator greater                              : 17
+ 7-bit comparator lessequal                            : 11
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <taxi>.
+The following registers are absorbed into accumulator <four>: 1 register on signal <four>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__varindex0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__varindex0029> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__varindex0030> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__varindex0031> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <taxi> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 32
+ 10x8-bit ROM                                          : 8
+ 16x32-bit ROM                                         : 24
+# Adders/Subtractors                                   : 29
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 3
+ 6-bit adder                                           : 3
+ 6-bit adder carry out                                 : 10
+ 6-bit addsub                                          : 5
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 5
+# Counters                                             : 10
+ 10-bit up counter                                     : 1
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 3
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 6-bit updown accumulator                              : 1
+# Registers                                            : 69
+ Flip-Flops                                            : 69
+# Comparators                                          : 54
+ 32-bit comparator equal                               : 24
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 2
+ 33-bit comparator greatequal                          : 1
+ 7-bit comparator greater                              : 15
+ 7-bit comparator lessequal                            : 9
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <taxi>, ROM <Mrom__varindex0003> <Mrom__varindex0006> <Mrom__varindex0009> <Mrom__varindex0012> <Mrom__varindex0015> <Mrom__varindex0018> <Mrom__varindex0021> <Mrom__varindex0024> are equivalent, XST will keep only <Mrom__varindex0003>.
+INFO:Xst:2146 - In block <taxi>, ROM <Mrom__varindex0002> <Mrom__varindex0005> <Mrom__varindex0008> <Mrom__varindex0011> <Mrom__varindex0014> <Mrom__varindex0017> <Mrom__varindex0020> <Mrom__varindex0023> are equivalent, XST will keep only <Mrom__varindex0002>.
+INFO:Xst:2146 - In block <taxi>, ROM <Mrom__varindex0004> <Mrom__varindex0007> <Mrom__varindex0010> <Mrom__varindex0013> <Mrom__varindex0016> <Mrom__varindex0019> <Mrom__varindex0022> <Mrom__varindex0025> are equivalent, XST will keep only <Mrom__varindex0004>.
+
+Optimizing unit <taxi> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block taxi, actual ratio is 53.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 243
+ Flip-Flops                                            : 243
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : taxi.ngr
+Top Level Output File Name         : taxi
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 1487
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 175
+#      LUT2                        : 68
+#      LUT2_D                      : 3
+#      LUT2_L                      : 6
+#      LUT3                        : 182
+#      LUT3_D                      : 22
+#      LUT3_L                      : 16
+#      LUT4                        : 336
+#      LUT4_D                      : 38
+#      LUT4_L                      : 58
+#      MUXCY                       : 272
+#      MUXF5                       : 58
+#      VCC                         : 1
+#      XORCY                       : 238
+# FlipFlops/Latches                : 243
+#      FDE                         : 68
+#      FDR                         : 33
+#      FDRE                        : 141
+#      FDRSE                       : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 24
+#      IBUF                        : 5
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      476  out of    960    49%  
+ Number of Slice Flip Flops:            243  out of   1920    12%  
+ Number of 4 input LUTs:                917  out of   1920    47%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of     83    31%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+BTN3                               | BUFGP                  | 25    |
+CLK                                | BUFGP                  | 218   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 12.008ns (Maximum Frequency: 83.275MHz)
+   Minimum input arrival time before clock: 11.798ns
+   Maximum output required time after clock: 4.433ns
+   Maximum combinational path delay: 5.354ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BTN3'
+  Clock period: 12.008ns (frequency: 83.275MHz)
+  Total number of paths / destination ports: 50650 / 49
+-------------------------------------------------------------------------
+Delay:               12.008ns (Levels of Logic = 17)
+  Source:            t_two_0 (FF)
+  Destination:       t_one_5 (FF)
+  Source Clock:      BTN3 rising
+  Destination Clock: BTN3 rising
+
+  Data Path: t_two_0 to t_one_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             12   0.514   0.886  t_two_0 (t_two_0)
+     LUT2:I1->O            1   0.612   0.000  Madd_t_two_addsub0001_lut<0> (Madd_t_two_addsub0001_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Madd_t_two_addsub0001_cy<0> (Madd_t_two_addsub0001_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_t_two_addsub0001_cy<1> (Madd_t_two_addsub0001_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_t_two_addsub0001_cy<2> (Madd_t_two_addsub0001_cy<2>)
+     XORCY:CI->O          14   0.699   0.880  Madd_t_two_addsub0001_xor<3> (Madd_t_thousand_add0001_lut<3>)
+     LUT3_D:I2->LO         1   0.612   0.103  t_thousand_cmp_gt00041_SW0 (N615)
+     LUT4:I3->O            9   0.612   0.727  t_thousand_cmp_gt00041 (t_thousand_cmp_gt0004)
+     LUT3:I2->O           12   0.612   0.817  t_one_mux0002<1>11 (N0)
+     MUXF5:S->O            6   0.641   0.599  t_one_mux00032 (t_one_mux0003)
+     LUT3:I2->O            1   0.612   0.000  Maddsub_t_one_share0000_lut<0> (Maddsub_t_one_share0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Maddsub_t_one_share0000_cy<0> (Maddsub_t_one_share0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_t_one_share0000_cy<1> (Maddsub_t_one_share0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_t_one_share0000_cy<2> (Maddsub_t_one_share0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_t_one_share0000_cy<3> (Maddsub_t_one_share0000_cy<3>)
+     MUXCY:CI->O           0   0.052   0.000  Maddsub_t_one_share0000_cy<4> (Maddsub_t_one_share0000_cy<4>)
+     XORCY:CI->O           1   0.699   0.387  Maddsub_t_one_share0000_xor<5> (t_one_share0000<5>)
+     LUT3:I2->O            1   0.612   0.000  t_one_mux0000<5>1 (t_one_mux0000<5>)
+     FDE:D                     0.268          t_one_5
+    ----------------------------------------
+    Total                     12.008ns (7.610ns logic, 4.398ns route)
+                                       (63.4% logic, 36.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 11.123ns (frequency: 89.907MHz)
+  Total number of paths / destination ports: 28008 / 482
+-------------------------------------------------------------------------
+Delay:               11.123ns (Levels of Logic = 11)
+  Source:            count_1 (FF)
+  Destination:       DISP2_4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: count_1 to DISP2_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             28   0.514   1.141  count_1 (count_1)
+     LUT2:I1->O            5   0.612   0.690  AN2_mux0003<0>31 (N1041)
+     LUT4:I0->O            1   0.612   0.000  AN2_cmp_eq0014_F (N544)
+     MUXF5:I0->O          12   0.278   0.820  AN2_cmp_eq0014 (AN2_cmp_eq0014)
+     LUT4_D:I3->O          9   0.612   0.700  AN2_cmp_eq00051 (AN2_cmp_eq0005)
+     LUT4:I3->O            1   0.612   0.387  DISP2_mux0001<4>28 (DISP2_mux0001<4>28)
+     LUT3:I2->O            1   0.612   0.000  DISP2_mux0001<4>52_F (N528)
+     MUXF5:I0->O           2   0.278   0.383  DISP2_mux0001<4>52 (DISP2_mux0001<4>52)
+     LUT4_L:I3->LO         1   0.612   0.103  DISP2_mux0001<4>77_SW0 (N514)
+     LUT4:I3->O            1   0.612   0.387  DISP2_mux0001<4>77 (DISP2_mux0001<4>)
+     LUT3:I2->O            1   0.612   0.000  Mmux_DISP2_mux0000_2_f5_3_G (N391)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_DISP2_mux0000_2_f5_3 (DISP2_mux0000<4>)
+     FDE:D                     0.268          DISP2_4
+    ----------------------------------------
+    Total                     11.123ns (6.512ns logic, 4.611ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BTN3'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.621ns (Levels of Logic = 2)
+  Source:            BTN1 (PAD)
+  Destination:       t_three_0 (FF)
+  Destination Clock: BTN3 rising
+
+  Data Path: BTN1 to t_three_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  BTN1_IBUF (BTN1_IBUF)
+     LUT2:I0->O           12   0.612   0.817  t_three_not00021 (t_three_not0002)
+     FDE:CE                    0.483          t_three_0
+    ----------------------------------------
+    Total                      3.621ns (2.201ns logic, 1.420ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1703 / 282
+-------------------------------------------------------------------------
+Offset:              11.798ns (Levels of Logic = 12)
+  Source:            SW<1> (PAD)
+  Destination:       DISP2_4 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SW<1> to DISP2_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.106   1.225  SW_1_IBUF (LD6_7_1_OBUF)
+     LUT2:I0->O            5   0.612   0.690  AN2_mux0003<0>31 (N1041)
+     LUT4:I0->O            1   0.612   0.000  AN2_cmp_eq0014_F (N544)
+     MUXF5:I0->O          12   0.278   0.820  AN2_cmp_eq0014 (AN2_cmp_eq0014)
+     LUT4_D:I3->O          9   0.612   0.700  AN2_cmp_eq00051 (AN2_cmp_eq0005)
+     LUT4:I3->O            1   0.612   0.387  DISP2_mux0001<4>28 (DISP2_mux0001<4>28)
+     LUT3:I2->O            1   0.612   0.000  DISP2_mux0001<4>52_F (N528)
+     MUXF5:I0->O           2   0.278   0.383  DISP2_mux0001<4>52 (DISP2_mux0001<4>52)
+     LUT4_L:I3->LO         1   0.612   0.103  DISP2_mux0001<4>77_SW0 (N514)
+     LUT4:I3->O            1   0.612   0.387  DISP2_mux0001<4>77 (DISP2_mux0001<4>)
+     LUT3:I2->O            1   0.612   0.000  Mmux_DISP2_mux0000_2_f5_3_G (N391)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_DISP2_mux0000_2_f5_3 (DISP2_mux0000<4>)
+     FDE:D                     0.268          DISP2_4
+    ----------------------------------------
+    Total                     11.798ns (7.104ns logic, 4.694ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.433ns (Levels of Logic = 1)
+  Source:            DISP2_4 (FF)
+  Destination:       DISP1<4> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: DISP2_4 to DISP1<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.514   0.750  DISP2_4 (DISP2_4)
+     OBUF:I->O                 3.169          DISP1_4_OBUF (DISP1<4>)
+    ----------------------------------------
+    Total                      4.433ns (3.683ns logic, 0.750ns route)
+                                       (83.1% logic, 16.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               5.354ns (Levels of Logic = 2)
+  Source:            SW0 (PAD)
+  Destination:       LD5 (PAD)
+
+  Data Path: SW0 to LD5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   1.106   1.079  SW0_IBUF (LD5_OBUF)
+     OBUF:I->O                 3.169          LD5_OBUF (LD5)
+    ----------------------------------------
+    Total                      5.354ns (4.275ns logic, 1.079ns route)
+                                       (79.9% logic, 20.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.03 secs
+ 
+--> 
+
+Total memory usage is 264908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :   48 (   0 filtered)
+

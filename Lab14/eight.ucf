@@ -1,0 +1,15 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "AN[0]" LOC = K14;
+NET "AN[1]" LOC = M13;
+NET "AN[2]" LOC = J12;
+NET "AN[3]" LOC = F12;
+NET "CA" LOC = L14;
+NET "CB" LOC = H12;
+NET "CC" LOC = N14;
+NET "CD" LOC = N11;
+NET "CE" LOC = P12;
+NET "CF" LOC = L13;
+NET "CG" LOC = M12;
+NET "DP" LOC = N13;

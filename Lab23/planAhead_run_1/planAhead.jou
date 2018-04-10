@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Fri Dec 16 18:20:58 2016
+# Process ID: 13520
+# Log file: D:/FPGA/IEEE/Lab23/planAhead_run_1/planAhead.log
+# Journal file: D:/FPGA/IEEE/Lab23/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/FPGA/IEEE/Lab23/pa.fromHdl.tcl
+startgroup
+set_property package_pin G12 [get_ports BTN0]
+endgroup
+startgroup
+set_property package_pin C11 [get_ports BTN1]
+endgroup
+save_design

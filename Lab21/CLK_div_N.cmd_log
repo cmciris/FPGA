@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab20/CLK_div_N.xst" -ofn "D:/FPGA/IEEE/Lab20/CLK_div_N.syr" 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab20/CLK_div_N.xst" -ofn "D:/FPGA/IEEE/Lab20/CLK_div_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CLK_div_N.ucf -p xc3s100e-cp132-5 CLK_div_N.ngc CLK_div_N.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o CLK_div_N_map.ncd CLK_div_N.ngd CLK_div_N.pcf 
+par -w -intstyle ise -ol high -t 1 CLK_div_N_map.ncd CLK_div_N.ncd CLK_div_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml CLK_div_N.twx CLK_div_N.ncd -o CLK_div_N.twr CLK_div_N.pcf -ucf CLK_div_N.ucf 
+bitgen -intstyle ise -f CLK_div_N.ut CLK_div_N.ncd 
+xst -intstyle ise -ifn "D:/FPGA/IEEE/Lab21/CLK_div_N.xst" -ofn "D:/FPGA/IEEE/Lab21/CLK_div_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CLK_div_N.ucf -p xc3s100e-cp132-5 CLK_div_N.ngc CLK_div_N.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o CLK_div_N_map.ncd CLK_div_N.ngd CLK_div_N.pcf 
+par -w -intstyle ise -ol high -t 1 CLK_div_N_map.ncd CLK_div_N.ncd CLK_div_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml CLK_div_N.twx CLK_div_N.ncd -o CLK_div_N.twr CLK_div_N.pcf -ucf CLK_div_N.ucf 
+bitgen -intstyle ise -f CLK_div_N.ut CLK_div_N.ncd 
